@@ -5,11 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import org.springframework.hateoas.RepresentationModel;
 
 
 @Entity
 @Table(name = "peliculas")
-public class Pelicula {
+public class Pelicula extends RepresentationModel<Pelicula> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

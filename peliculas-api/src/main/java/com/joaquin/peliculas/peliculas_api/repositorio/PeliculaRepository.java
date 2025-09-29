@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PeliculaRepository extends JpaRepository<Pelicula, Long> {
-    // La magia de Spring Data JPA hace que no necesites escribir nada más aquí.
 }
